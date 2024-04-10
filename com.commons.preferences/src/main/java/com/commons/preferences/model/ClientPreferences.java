@@ -16,7 +16,7 @@ public class ClientPreferences {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "user_id")
+    @Column(name = "user_id", unique = true)
     private Long clientId;
 
     @Column(name = "type_room")
